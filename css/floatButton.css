@@ -1,0 +1,43 @@
+.btn_store {
+  position: fixed;
+  bottom: 5%;
+  left: 3%;
+}
+
+.btn_store a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: 300ms ease;
+}
+
+.btn_store a:hover {
+  transform: scale(0.97);
+}
+
+.btn_store a .icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.btn_store a .text {
+  /* font-size: 16px; */
+  /* font-weight: 600; */
+  /* color: #E0833E; */
+  height: 134px;
+}
+
+@media (max-width: 700px) {
+  .btn_store {
+    position: fixed;
+    bottom: 5%;
+    left: inherit;
+    right: 25px;
+  }
+
+  .btn_store a .text {
+    display: none;
+  }
+}

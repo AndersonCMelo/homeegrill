@@ -1,0 +1,203 @@
+@media (max-width: 1250px) {
+  .first_section .content {
+    padding: 140px 0;
+  }
+
+  .first_section .content .title {
+    width: 70%;
+  }
+
+  .second_section .content .video_image {
+    margin-top: -76px;
+  }
+
+  .fourth_section .content .more {
+    padding: 70px 0 80px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .first_section .content {
+    padding: 120px 0;
+  }
+
+  .first_section .content .title {
+    width: 70%;
+    font-size: 66px;
+  }
+
+  .first_section .content .text_block {
+    width: 55%;
+    margin-top: 40px;
+  }
+
+  .second_section .content .video_image {
+    margin-top: -62px;
+  }
+
+  .third_section .content .product.product1 {
+    width: 46%;
+  }
+  
+  .third_section .content .product.product2 {
+    width: 18%;
+  }
+  
+  .third_section .content .product.product3 {
+    width: 18%;
+  }
+  
+  .third_section .content .product.product4 {
+    width: 18%;
+  }
+
+  .fourth_section .content .more {
+    padding: 60px 0 60px;
+  }
+
+  .fourth_section .content .text {
+    font-size: 16px;
+    width: 50%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 950px) {
+  .first_section .content {
+    padding: 110px 0;
+  }
+  
+  .first_section .content .title {
+    width: 70%;
+    font-size: 56px;
+  }
+
+  .second_section .content {
+    padding: 40px 0 60px;
+  }
+}
+
+/* ESCONDE OS ELEMEN  TOS QUE PERTENCEM APENAS AO MOBILE */
+@media (min-width: 701px) {
+  .fourth_section .content .button_mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .first_section {
+    background-image: url("../assets/background_1_mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .first_section .content {
+    padding: 300px 0 40px;
+  }
+
+  .first_section .content .title {
+    width: 100%;
+    font-size: 40px;
+  }
+
+  .first_section .content .text_block {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .first_section .content .text_block .text {
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+
+  .first_section .bottom_line {
+    display: none;
+  }
+
+  .second_section .content {
+    padding: 55px 0 60px;
+  }
+
+  .second_section .content .background_image {
+    width: 100%;
+  }
+
+  .second_section .content .video_image {
+    margin-top: -30px;
+    width: 86%;
+  }
+
+  .second_section .content .text {
+    margin: 20px 0;
+    font-size: 14px;
+  }
+
+  .third_section .content .title {
+    font-size: 32px;
+  }
+
+  .third_section .content .subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .third_section .content .text {
+    margin: 30px 0 20px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .third_section .content .products {
+    display: none;
+  }
+
+  .fourth_section {
+    background-image: url("../assets/bg_receitas_mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .fourth_section .content .title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .fourth_section .content .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .fourth_section .content .more {
+    padding: 60px 0 200px;
+  }
+
+  .fourth_section .content .more .subtitle {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .fourth_section .content .text {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .fourth_section .content .button {
+    display: none;
+  }
+
+  .fourth_section .content .button_mobile {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: rgba(224, 131, 62, 0.8);
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 12px 15px;
+  }
+}
