@@ -20,9 +20,12 @@
   <link rel="stylesheet" href="./css/homepage.css">
   <link rel="stylesheet" href="./css/homepage_responsive.css">
 
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 <body>
-  <!-- Header -->
+  <!-- Header Desktop -->
   <header class="header">
     <div class="desktop_header header_container">
       <div class="menu_container">
@@ -67,7 +70,36 @@
 
       <button class="button btn_store_menu">Acessar loja</button>
     </div>
+  </header>
 
+  <!-- Header Mobile -->
+  <header>
+    <!-- Header -->
+    <div class="mobile_header">
+      <!-- Logo -->
+      <a href="/"><img class="logo" src="./assets/logo.png" alt="Home&Grill"></a>
+
+      <!-- Botão Hamburguer -->
+      <div class="hamburger hamburger_js" onclick="openMenu()">
+        <div class="hamburger_element"></div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="mobile">
+
+      <nav class="mobile_navigation">
+        <ul class="mobile_menu">
+          <li class="mobile_menu_item"><a class="active" href="/">Home</a></li>
+          <li class="mobile_menu_item"><a href="#">Sobre</a></li>
+          <li class="mobile_menu_item"><a href="#">Produtos</a></li>
+          <li class="mobile_menu_item"><a href="#">Receitas H&G</a></li>
+          <li class="mobile_menu_item"><a href="#">Unidades</a></li>
+          <li class="mobile_menu_item"><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+      
+    </div>
   </header>
 
   <!-- Float Button - Acesse nossa loja -->
@@ -158,6 +190,42 @@
 
       </div>
 
+      <div class="mobile_products">
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <img src="./assets/mobile_produto1.jpg" alt="Home & Grill Maxx">
+              <h3 class="product_title">Home & Grill Maxx</h3>
+              <span class="product_text">Lorem ipsum dolor sit amet.</span>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/mobile_produto2.jpg" alt="Linha Drop in">
+              <h3 class="product_title">Linha Drop in</h3>
+              <span class="product_text">Lorem ipsum consectetur adipiscing elit.</span>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/mobile_produto3.jpg" alt="Linha Premium">
+              <h3 class="product_title">Linha Premium</h3>
+              <span class="product_text">Lorem ipsum dolor adipiscing elit.</span>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/mobile_produto4.jpg" alt="Linha Smart">
+              <h3 class="product_title">Linha Smart</h3>
+              <span class="product_text">Lorem ipsum augue vel posuere.</span>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        
+      </div>
+
       <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum dui vel ultrices fermentum.</span>
         
       <button class="button" onclick="showModal()">Ver todas as linhas</button>
@@ -213,19 +281,22 @@
 
       <div class="cards">
         <div class="card">
-          <img class="video_image" src="./assets/receita1.jpg" alt="">
+          <!-- <img class="video_image" src="./assets/receita1.jpg" alt=""> -->
+          <iframe class="video_image" width="560" height="315" src="https://www.youtube.com/embed/VX5YOOuIaWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <span class="card_text">Lorem ipsum dolor sit amet, consectetur.</span>
           <a href="#">Ver receita</a>
         </div>
 
         <div class="card">
-          <img class="video_image" src="./assets/receita2.jpg" alt="">
+          <!-- <img class="video_image" src="./assets/receita2.jpg" alt=""> -->
+          <iframe class="video_image" width="560" height="315" src="https://www.youtube.com/embed/VX5YOOuIaWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <span class="card_text">Lorem ipsum dolor sit amet, consectetur.</span>
           <a href="#">Ver receita</a>
         </div>
 
         <div class="card">
-          <img class="video_image" src="./assets/receita3.jpg" alt="">
+          <!-- <img class="video_image" src="./assets/receita3.jpg" alt=""> -->
+          <iframe class="video_image" width="560" height="315" src="https://www.youtube.com/embed/VX5YOOuIaWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <span class="card_text">Lorem ipsum dolor sit amet, consectetur.</span>
           <a href="#">Ver receita</a>
         </div>
@@ -307,5 +378,10 @@
   
   <script src="./js/products.js"></script>
   <script src="./js/menuDropdown.js"></script>
+  <script src="./js/mobileHeader.js"></script>
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/mobileProducts.js"></script>
 </body>
 </html>
