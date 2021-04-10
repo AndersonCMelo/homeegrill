@@ -1,0 +1,128 @@
+@media (max-width: 1250px) {
+  .first_section .content .text_block {
+    width: 60%;
+  }
+
+  .third_section .content .text_block {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .first_section .content {
+    padding: 140px 0 100px;
+  }
+
+  .first_section .content .title {
+    font-size: 66px;
+  }
+
+  .first_section .content .text_block {
+    width: 70%;
+  }
+
+  .secont_section .content .img {
+    width: 80%;
+  }
+
+  .third_section .content .text_block {
+    width: 75%;
+  }
+
+  .fourth_section .content .differences {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .fifth_section .content .video_image {
+    width: 80%;
+  }  
+}
+
+@media (max-width: 950px) {
+  .first_section .content {
+    padding: 120px 0 80px;
+  }
+
+  .first_section .content .title {
+    font-size: 56px;
+  }
+
+  .first_section .content .text_block {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .third_section .content .text_block {
+    width: 80%;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+  .first_section .content {
+    padding: 120px 0 40px;
+  }
+
+  .first_section .content .title {
+    width: 100%;
+    font-size: 40px;
+  }
+
+  .first_section .content .text_block {
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+
+  .first_section .content .text_block .text {
+    font-size: 14px;
+  }
+
+  .secont_section .content .img {
+    width: 100%;
+  }
+
+  .third_section .content {
+    padding: 60px 0;
+  }
+
+  .third_section .content .text_block {
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .third_section .content .text_block .text {
+    font-size: 14px;
+  }
+
+  .fourth_section .content .title {
+    font-size: 32px;
+  }
+
+  .fourth_section .content .differences {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .fourth_section .content .difference {
+    margin-bottom: 15px;
+  }
+
+  .fourth_section .content .difference .subtitle {
+    font-size: 20px;
+  }
+
+  .fourth_section .content .difference .text {
+    font-size: 14px;
+  }
+
+  .fifth_section .content {
+    padding: 60px 0 40px;
+  }
+
+  .fifth_section .content .video_image {
+    width: 86%;
+  }
+  
+}

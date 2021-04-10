@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home&Grill - Sobre nós</title>
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../assets/favicon2.png">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/floatButton.css">
+  <link rel="stylesheet" href="../css/contactSection.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles_responsive.css">
+  
+</head>
+<body>
+  <!-- Header Desktop -->
+  <header class="header">
+    <div class="desktop_header header_container">
+      <div class="menu_container">
+        <a href="/"><img class="logo" src="../assets/logo.png" alt="Home&Grill"></a>
+
+        <nav class="navigation">
+          <ul class="normal_menu">
+            <li class="menu"><a href="../">Home</a></li>
+
+            <li class="menu"><a class="active" href="./">Sobre</a></li>
+
+            <li class="menu dropdown">
+              <span class="menu_item" onclick="openProducts()">Produtos <span class="seta_baixo seta_baixo_produtos"></span></span>
+
+              <div class="menu_dropdown menu_produtos hide">
+                <a href="#">Home & Grill Maxx</a>
+                <a href="#">Linha Drop in</a>
+                <a href="#">Linha Premium</a>
+                <a href="#">Linha Smart</a>
+                <a href="#">Linha Professional</a>
+                <a href="#">Linha Exclusive</a>
+                <a href="#">Home&Grill Kamado</a>
+                <a href="#">Acessórios</a>
+              </div>
+            </li>
+
+            <li class="menu"><a href="#">Receitas H&G</a></li>
+
+            <li class="menu"><a href="#">Unidades</a></li>
+
+            <li class="menu dropdown">
+              <span class="menu_item" onclick="openContacts()">Contato <span class="seta_baixo seta_baixo_contato"></span></span>
+
+              <div class="menu_dropdown menu_contato hide">
+                <a href="../fale-conosco/">Fale conosco</a>
+                <a href="#">Seja um revendedor</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <button class="button btn_store_menu">Acessar loja</button>
+    </div>
+  </header>
+
+  <!-- Header Mobile -->
+  <header>
+    <!-- Header -->
+    <div class="mobile_header">
+      <!-- Logo -->
+      <a href="../"><img class="logo" src="../assets/logo.png" alt="Home&Grill"></a>
+
+      <!-- Botão Hamburguer -->
+      <div class="hamburger hamburger_js" onclick="openMenu()">
+        <div class="hamburger_element"></div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="mobile">
+
+      <nav class="mobile_navigation">
+        <ul class="mobile_menu">
+          <li class="mobile_menu_item"><a href="../">Home</a></li>
+          <li class="mobile_menu_item"><a class="active" href="./">Sobre</a></li>
+          <li class="mobile_menu_item"><a href="#">Produtos</a></li>
+          <li class="mobile_menu_item"><a href="#">Receitas H&G</a></li>
+          <li class="mobile_menu_item"><a href="#">Unidades</a></li>
+          <li class="mobile_menu_item"><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+  </header>
+
+  <!-- Float Button - Acesse nossa loja -->
+  <div class="btn_store">
+    <a class="btnTop" href="#">
+      <img class="text" src="../assets/acesse_nossa_loja.svg" alt="">
+      <img class="icon" src="../assets/btn_store.svg" alt="">
+    </a>
+  </div> 
+
+  <!-- Primeira sessão -->
+  <div class="first_section">
+    <div class="content container">
+      <h1 class="title">Sobre nós</h1>
+
+      <div class="text_block">
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Pellentesque tempor turpis et lacus placerat, non cursus metus commodo. 
+          Vestibulum posuere enim nec erat maximus lacinia. Nulla at est enim. 
+          Sed mattis nunc eu nunc finibus tincidunt. Sed mollis nisl vel diam 
+          pellentesque luctus. Pellentesque venenatis iaculis metus, vitae eleifend 
+          odio laoreet id. Vivamus id sem porttitor, dapibus est vel, porta dolor.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Segunda sessão - Foto -->
+  <div class="secont_section">
+    <div class="content container">
+      <img class="img" src="../assets/imagem-sobre.jpg" alt="Loja da Home&Grill">
+    </div>
+  </div>
+
+  <!-- Terceira sessão - Texto -->
+  <div class="third_section">
+    <div class="content container">
+      <div class="text_block">
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor turpis et lacus placerat, non cursus metus commodo. Vestibulum posuere enim nec erat maximus lacinia. Nulla at est enim. Sed mattis nunc eu nunc finibus tincidunt. Sed mollis nisl vel diam pellentesque luctus. Pellentesque venenatis iaculis metus, vitae eleifend odio laoreet id. Vivamus id sem porttitor, dapibus est vel, porta dolor.</p>
+
+        <p class="text">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas velit odio, lacinia sit amet placerat id, tincidunt at quam. Vestibulum non fermentum sem. Integer sagittis rutrum diam, a bibendum arcu auctor eu. Integer id tellus euismod, hendrerit ante non, fermentum mi.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quarta sessão - Diferenças -->
+  <div class="fourth_section">
+    <div class="content container">
+      <h3 class="title">Diferenças</h3>
+
+      <div class="differences">
+
+        <div class="difference">
+          <span class="subtitle">Lorem ipsum</span>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Pellentesque tempor turpis et lacus placerat, non cursus metus commodo. 
+            Vestibulum posuere enim nec erat maximus lacinia.
+          </p>
+        </div>
+
+        <div class="difference">
+          <span class="subtitle">Lorem ipsum</span>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Pellentesque tempor turpis et lacus placerat, non cursus metus commodo. 
+            Vestibulum posuere enim nec erat maximus lacinia.
+          </p>
+        </div>
+
+        <div class="difference">
+          <span class="subtitle">Lorem ipsum</span>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Pellentesque tempor turpis et lacus placerat, non cursus metus commodo. 
+            Vestibulum posuere enim nec erat maximus lacinia.
+          </p>
+        </div>
+
+        <div class="difference">
+          <span class="subtitle">Lorem ipsum</span>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Pellentesque tempor turpis et lacus placerat, non cursus metus commodo. 
+            Vestibulum posuere enim nec erat maximus lacinia.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Quinta sessão - Vídeo -->
+  <div class="fifth_section">
+    <div class="content container">
+      <img class="video_image" src="../assets/video_image.jpg" alt="">
+    </div>
+  </div>
+
+  <!-- Sessão de Contato/Unidades -->
+  <div class="contact_section">
+    <div class="content container">
+      <h2 class="title">Onde nos encontrar</h2>
+
+      <div class="infos">
+
+        <div class="address">
+          <h3 class="address_title">Showroom Natal</h3>
+          <p class="address_text">Av. Hermes da Fonseca, 1313, Tirol - Natal/RN</p>
+          <p class="address_text">(84) 98805-4457</p>
+        </div>
+
+        <div class="address">
+          <h3 class="address_title">Showroom João Pessoa</h3>
+          <p class="address_text">Av. Esperança - 1260 - Manaíra - João Pessoa/PB</p>
+          <p class="address_text">(83) 3031-3040</p>
+        </div>
+
+        <div class="address">
+          <h3 class="address_title">Showroom Alphaville</h3>
+          <p class="address_text">Calçada das Papoulas - 100 - Alphaville - Comercial Barueri/SP</p>
+          <p class="address_text">(11) 4193-3677</p>
+        </div>
+
+        <div class="social_media">
+          <h3 class="sm_title">Redes sociais</h3>
+
+          <a class="sm_item" href="#"><img class="sm_icon" src="../assets/facebook.svg" alt="Ícone do Facebook"> Facebook</a>
+          <a class="sm_item" href="#"><img class="sm_icon" src="../assets/instagram.svg" alt="Ícone do Instagram">Instagram</a>
+          <a class="sm_item" href="#"><img class="sm_icon" src="../assets/youtube.svg" alt="Ícone do YouTube">YouTube</a>
+          <a class="sm_item" href="#"><img class="sm_icon" src="../assets/twitter.svg" alt="Ícone do Twitter">Twitter</a>
+
+          <div class="sm_icons_mobile">
+            <a class="sm_item_mobile" href="#"><img class="sm_icon" src="../assets/facebook.svg" alt="Ícone do Facebook"></a>
+            <a class="sm_item_mobile" href="#"><img class="sm_icon" src="../assets/instagram.svg" alt="Ícone do Instagram"></a>
+            <a class="sm_item_mobile" href="#"><img class="sm_icon" src="../assets/youtube.svg" alt="Ícone do YouTube"></a>
+            <a class="sm_item_mobile" href="#"><img class="sm_icon" src="../assets/twitter.svg" alt="Ícone do Twitter"></a>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="button" href="../fale-conosco/">Fale conosco <img src="../assets/arrow_right.svg" alt="Seta para direita"></a>
+      <a class="button_mobile" href="../fale-conosco/">Fale conosco <img src="../assets/arrow_right_white.svg" alt="Seta para direita"></a>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <div class="footer">
+    <div class="content container">
+      <a href="../"><img class="logo" src="../assets/logo2x.png" alt="Home&Grill"></a>
+      <span class="copyright">Copyright © 2021 Home&Grill. Todos os direitos reservados.</span>
+    </div>
+  </div>
+
+  <script src="../js/menuDropdown.js"></script>
+  <script src="../js/mobileHeader.js"></script>
+</body>
+</html>

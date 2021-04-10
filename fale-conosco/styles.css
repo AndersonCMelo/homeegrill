@@ -1,0 +1,111 @@
+.first_section {
+  /* margin-top: 80px; */
+
+  background-image: url("../assets/background_contato.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first_section .content {
+  padding: 180px 0 120px;
+}
+
+.first_section .content .title {
+  font-size: 78px;
+  font-weight: 800;
+  color: #FFFFFF;
+
+  width: 50%;
+}
+
+.first_section .content .text_block {
+  width: 40%;
+  margin-top: 40px;
+  padding-left: 20px;
+  border-left: 3px solid #E0833E;
+}
+
+.first_section .content .text_block .text {
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #FFFFFF;
+}
+
+.first_section .content .form {
+  margin-top: 90px;
+  width: 40%;
+}
+
+.first_section .content .input_area {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+
+  position: relative;
+}
+
+.first_section .content .input_area .input_label {
+  font-size: 16px;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 10px;
+
+  transition: 300ms ease;
+}
+
+.first_section .content .input_area .input_label.active {
+  color: #3E3E3E;
+  bottom: 60px;
+}
+
+.first_section .content .input_area input {
+  background: transparent;
+  border-bottom: 3px solid #E0833E;
+  outline-style: none;
+  padding: 15px 0 10px;
+
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+.first_section .content .input_area textarea {
+  background: transparent;
+  border-bottom: 3px solid #E0833E;
+  outline-style: none;
+  padding: 15px 0 10px;
+
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+.first_section .content .button {
+  background: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  color: #E0833E;
+}
+
+.first_section .content .button img {
+  margin-left: 10px;
+  transition: 300ms ease;
+}
+
+.first_section .content .button:hover img {
+  transform: translateX(10px);
+}
+
+.first_section .content .email {
+  margin-top: 140px;
+}
+
+.first_section .content .email .subtitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.first_section .content .email .link {
+  font-size: 16px;
+  color: #FFFFFF;
+}
