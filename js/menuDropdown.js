@@ -13,3 +13,13 @@ function openContacts() {
   document.querySelector('.seta_baixo_contato')
     .classList.toggle('on')
 }
+
+function openProductsMobile() {
+  document.querySelector('.menu_produtos_mobile')
+    .classList.toggle('hide')
+}
+
+function openContactsMobile() {
+  document.querySelector('.menu_contato_mobile')
+    .classList.toggle('hide')
+}

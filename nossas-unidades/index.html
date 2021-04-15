@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home&Grill - Fale conosco</title>
+  <title>Home&Grill - Nossas unidades</title>
   
   <!-- Favicon -->
   <link rel="shortcut icon" href="../assets/favicon2.png">
@@ -51,14 +51,14 @@
 
             <li class="menu"><a href="../receitas-hg/">Receitas H&G</a></li>
 
-            <li class="menu"><a href="../nossas-unidades/">Unidades</a></li>
+            <li class="menu"><a class="active" href="./">Unidades</a></li>
 
             <li class="menu dropdown">
-              <span class="menu_item active" onclick="openContacts()">Contato <span class="seta_baixo seta_baixo_contato"></span></span>
+              <span class="menu_item" onclick="openContacts()">Contato <span class="seta_baixo seta_baixo_contato"></span></span>
 
               <div class="menu_dropdown menu_contato hide">
-                <a class="active" href="./">Fale conosco</a>
-                <a href="../seja-revendedor/">Seja um revendedor</a>
+                <a href="../fale-conosco/">Fale conosco</a>
+                <a href="#">Seja um revendedor</a>
               </div>
             </li>
           </ul>
@@ -88,7 +88,7 @@
       <nav class="mobile_navigation">
         <ul class="mobile_menu">
           <li class="mobile_menu_item"><a href="../">Home</a></li>
-          <li class="mobile_menu_item"><a href="../">Sobre</a></li>
+          <li class="mobile_menu_item"><a href="../sobre-nos/">Sobre</a></li>
           <li class="mobile_menu_item dropdown">
             <span onclick="openProductsMobile()">Produtos</span>
 
@@ -104,12 +104,12 @@
             </div>
           </li>
           <li class="mobile_menu_item"><a href="../receitas-hg/">Receitas H&G</a></li>
-          <li class="mobile_menu_item"><a href="../nossas-unidades/">Unidades</a></li>
+          <li class="mobile_menu_item"><a class="active" href="./">Unidades</a></li>
           <li class="mobile_menu_item dropdown">
-            <span class="active" onclick="openContactsMobile()">Contato</span>
+            <span onclick="openContactsMobile()">Contato</span>
 
             <div class="dropdown_mobile menu_contato_mobile hide">
-              <a class="a_dropdown" href="./">Fale conosco</a>
+              <a class="a_dropdown" href="../fale-conosco/">Fale conosco</a>
               <a class="a_dropdown" href="../seja-revendedor/">Seja um revendedor</a>
             </div>
           </li>
@@ -127,50 +127,71 @@
     </a>
   </div>
 
-  <!-- Primeira sessão - Fale conosco -->
+  <!-- Primeira sessão -->
   <div class="first_section">
     <div class="content container">
-      <h1 class="title">Fale conosco</h1>
+      <h1 class="title">Nossas unidades</h1>
 
       <div class="text_block">
-        <p class="text">Precisa de ajuda ou ficou com dúvidas? Preencha nosso 
-          formulário e entraremos em contato com você.</p>
-      </div>
-
-      <form class="form" action="">
-
-        <div class="input_area">
-          <label class="input_label label_nome" for="nome">Nome</label>
-          <input class="input" type="text" name="nome" id="nome" onfocus="addOnName()" onblur="removeOnName()">
-        </div>
-
-        <div class="input_area">
-          <label class="input_label label_email" for="email">E-mail</label>
-          <input class="input" type="text" name="email" id="email" onfocus="addOnEmail()" onblur="removeOnEmail()">
-        </div>
-
-        <div class="input_area">
-          <label class="input_label label_telefone" for="telefone">Telefone</label>
-          <input class="input" type="text" name="telefone" id="telefone" onfocus="addOnTelefone()" onblur="removeOnTelefone()">
-        </div>
-
-        <div class="input_area">
-          <label class="input_label label_mensagem" for="mensagem">Mensagem</label>
-          <textarea class="input" name="mensagem" id="mensagem" rows="1" onfocus="addOnMensagem()" onblur="removeOnMensagem()"></textarea>
-        </div>
-
-        <button type="submit" class="button">Enviar <img src="../assets/arrow_right.svg" alt="Seta para direita"></button>
-
-      </form>
-
-      <div class="email">
-        <h3 class="subtitle">Ou envie-nos um e-mail</h3>
-
-        <a class="link" href="#">contato@home&grill.com.br</a>
+        <p class="text">Confira aqui onde você pode encontrar uma unidade Home&Grill.</p>
       </div>
     </div>
   </div>
-  
+
+  <!-- Segunda sessão - Unidades -->
+  <div class="second_section">
+    <div class="content container">
+
+      <div class="unidade">
+        <img class="image" src="../assets/imagem-unidade.jpg" alt="Showroom Natal">
+        <h3 class="address_title">Showroom Natal</h3>
+        <p class="address_text">Av. Hermes da Fonseca, 1313, Tirol - Natal/RN</p>
+        <p class="address_text">(84) 98805-4457</p>
+      </div>
+
+      <div class="unidade">
+        <img class="image" src="../assets/imagem-unidade.jpg" alt="Showroom Natal">
+        <h3 class="address_title">Showroom João Pessoa</h3>
+        <p class="address_text">Av. Esperança - 1260 - Manaíra - João Pessoa/PB</p>
+        <p class="address_text">(83) 3031-3040</p>
+      </div>
+
+      <div class="unidade">
+        <img class="image" src="../assets/imagem-unidade.jpg" alt="Showroom Natal">
+        <h3 class="address_title">Showroom Alphaville</h3>
+        <p class="address_text">Calçada das Papoulas - 100 - Alphaville - Comercial Barueri/SP</p>
+        <p class="address_text">(11) 4193-3677</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Terceira sessão - Revendedores -->
+  <div class="third_section">
+    <div class="content container">
+      <h2 class="title">Onde comprar Home&Grill</h2>
+
+      <div class="text_block">
+        <p class="text">Veja aqui onde você pode encontrar os revendedores dos nossos produtos.</p>
+      </div>
+
+      <a class="button" href="#">Onde comprar</a>
+    </div>
+  </div>
+
+  <!-- Quarta sessão - Assistência -->
+  <div class="fourth_section">
+    <div class="content container">
+      <h2 class="title">Assistências</h2>
+
+      <div class="text_block">
+        <p class="text">Encontre a assistência técnica mais próxima a você.</p>
+      </div>
+
+      <a class="button" href="#">Ver assistências</a>
+    </div>
+  </div>
+
   <!-- Sessão de Contato/Unidades -->
   <div class="contact_section">
     <div class="content container">
@@ -229,6 +250,4 @@
 
   <script src="../js/menuDropdown.js"></script>
   <script src="../js/mobileHeader.js"></script>
-  <script src="../js/inputLabel.js"></script>
 </body>
-</html>

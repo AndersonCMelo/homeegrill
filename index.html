@@ -33,35 +33,35 @@
 
         <nav class="navigation">
           <ul class="normal_menu">
-            <li class="menu"><a class="active" href="/">Home</a></li>
+            <li class="menu"><a class="active" href="./">Home</a></li>
 
-            <li class="menu"><a href="/sobre-nos/">Sobre</a></li>
+            <li class="menu"><a href="./sobre-nos/">Sobre</a></li>
 
             <li class="menu dropdown">
               <span class="menu_item" onclick="openProducts()">Produtos <span class="seta_baixo seta_baixo_produtos"></span></span>
 
               <div class="menu_dropdown menu_produtos hide">
-                <a href="#">Home & Grill Maxx</a>
-                <a href="#">Linha Drop in</a>
-                <a href="#">Linha Premium</a>
-                <a href="#">Linha Smart</a>
-                <a href="#">Linha Professional</a>
-                <a href="#">Linha Exclusive</a>
-                <a href="#">Home&Grill Kamado</a>
-                <a href="#">Acessórios</a>
+                <a href="./produtos/home-&-grill-maxx/">Home & Grill Maxx</a>
+                <a href="./produtos/linha-drop-in/">Linha Drop in</a>
+                <a href="./produtos/linha-premium/">Linha Premium</a>
+                <a href="./produtos/linha-smart/">Linha Smart</a>
+                <a href="./produtos/linha-professional/">Linha Professional</a>
+                <a href="./produtos/linha-exclusive/">Linha Exclusive</a>
+                <a href="./produtos/home&grill-kamado/">Home&Grill Kamado</a>
+                <a href="./produtos/acessorios/">Acessórios</a>
               </div>
             </li>
 
-            <li class="menu"><a href="#">Receitas H&G</a></li>
+            <li class="menu"><a href="./receitas-hg/">Receitas H&G</a></li>
 
-            <li class="menu"><a href="#">Unidades</a></li>
+            <li class="menu"><a href="./nossas-unidades/">Unidades</a></li>
 
             <li class="menu dropdown">
               <span class="menu_item" onclick="openContacts()">Contato <span class="seta_baixo seta_baixo_contato"></span></span>
 
               <div class="menu_dropdown menu_contato hide">
-                <a href="/fale-conosco/">Fale conosco</a>
-                <a href="#">Seja um revendedor</a>
+                <a href="./fale-conosco/">Fale conosco</a>
+                <a href="./seja-revendedor/">Seja um revendedor</a>
               </div>
             </li>
           </ul>
@@ -92,10 +92,30 @@
         <ul class="mobile_menu">
           <li class="mobile_menu_item"><a class="active" href="/">Home</a></li>
           <li class="mobile_menu_item"><a href="/sobre-nos/">Sobre</a></li>
-          <li class="mobile_menu_item"><a href="#">Produtos</a></li>
-          <li class="mobile_menu_item"><a href="#">Receitas H&G</a></li>
-          <li class="mobile_menu_item"><a href="#">Unidades</a></li>
-          <li class="mobile_menu_item"><a href="#">Contato</a></li>
+          <li class="mobile_menu_item dropdown">
+            <span onclick="openProductsMobile()">Produtos</span>
+
+            <div class="dropdown_mobile menu_produtos_mobile hide">
+              <a class="a_dropdown" href="./produtos/home-&-grill-maxx/">Home & Grill Maxx</a>
+              <a class="a_dropdown" href="./produtos/linha-drop-in/">Linha Drop in</a>
+              <a class="a_dropdown" href="./produtos/linha-premium/">Linha Premium</a>
+              <a class="a_dropdown" href="./produtos/linha-smart/">Linha Smart</a>
+              <a class="a_dropdown" href="./produtos/linha-professional/">Linha Professional</a>
+              <a class="a_dropdown" href="./produtos/linha-exclusive/">Linha Exclusive</a>
+              <a class="a_dropdown" href="./produtos/home&grill-kamado/">Home&Grill Kamado</a>
+              <a class="a_dropdown" href="./produtos/acessorios/">Acessórios</a>
+            </div>
+          </li>
+          <li class="mobile_menu_item"><a href="./receitas-hg/">Receitas H&G</a></li>
+          <li class="mobile_menu_item"><a href="./nossas-unidades/">Unidades</a></li>
+          <li class="mobile_menu_item dropdown">
+            <span onclick="openContactsMobile()">Contato</span>
+
+            <div class="dropdown_mobile menu_contato_mobile hide">
+              <a class="a_dropdown" href="./fale-conosco/">Fale conosco</a>
+              <a class="a_dropdown" href="./seja-revendedor/">Seja um revendedor</a>
+            </div>
+          </li>
         </ul>
       </nav>
       

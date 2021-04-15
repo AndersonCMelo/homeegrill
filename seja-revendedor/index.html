@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home&Grill - Fale conosco</title>
+  <title>Home&Grill - Seja revendedor</title>
   
   <!-- Favicon -->
   <link rel="shortcut icon" href="../assets/favicon2.png">
@@ -57,8 +57,8 @@
               <span class="menu_item active" onclick="openContacts()">Contato <span class="seta_baixo seta_baixo_contato"></span></span>
 
               <div class="menu_dropdown menu_contato hide">
-                <a class="active" href="./">Fale conosco</a>
-                <a href="../seja-revendedor/">Seja um revendedor</a>
+                <a href="../fale-conosco/">Fale conosco</a>
+                <a class="active" href="./">Seja um revendedor</a>
               </div>
             </li>
           </ul>
@@ -109,8 +109,8 @@
             <span class="active" onclick="openContactsMobile()">Contato</span>
 
             <div class="dropdown_mobile menu_contato_mobile hide">
-              <a class="a_dropdown" href="./">Fale conosco</a>
-              <a class="a_dropdown" href="../seja-revendedor/">Seja um revendedor</a>
+              <a class="a_dropdown" href="../fale-conosco/">Fale conosco</a>
+              <a class="a_dropdown" href="./">Seja um revendedor</a>
             </div>
           </li>
         </ul>
@@ -130,43 +130,71 @@
   <!-- Primeira sessão - Fale conosco -->
   <div class="first_section">
     <div class="content container">
-      <h1 class="title">Fale conosco</h1>
-
+      <h1 class="title">Seja revendedor</h1>
+      
       <div class="text_block">
-        <p class="text">Precisa de ajuda ou ficou com dúvidas? Preencha nosso 
-          formulário e entraremos em contato com você.</p>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Morbi efficitur id diam vitae dictum.</p>
       </div>
 
-      <form class="form" action="">
+      <div class="sub_content">
+        
+        <div class="form_side">
+          <form class="form" action="">
 
-        <div class="input_area">
-          <label class="input_label label_nome" for="nome">Nome</label>
-          <input class="input" type="text" name="nome" id="nome" onfocus="addOnName()" onblur="removeOnName()">
+            <div class="input_area">
+              <label class="input_label label_nome" for="nome">Nome do responsável</label>
+              <input class="input" type="text" name="nome" id="nome" onfocus="addOnName()" onblur="removeOnName()">
+            </div>
+
+            <div class="input_area">
+              <label class="input_label label_email" for="email">E-mail</label>
+              <input class="input" type="text" name="email" id="email" onfocus="addOnEmail()" onblur="removeOnEmail()">
+            </div>
+
+            <div class="input_area">
+              <label class="input_label label_telefone" for="telefone">Telefone</label>
+              <input class="input" type="text" name="telefone" id="telefone" onfocus="addOnTelefone()" onblur="removeOnTelefone()">
+            </div>
+
+            <div class="input_area">
+              <label class="input_label label_cnpj" for="cnpj">CNPJ</label>
+              <input class="input" type="text" name="cnpj" id="cnpj" onfocus="addOnCNPJ()" onblur="removeOnCNPJ()">
+            </div>
+
+            <div class="input_area">
+              <label class="input_label label_link" for="link">Link do site ou loja online</label>
+              <input class="input" type="text" name="link" id="link" onfocus="addOnLink()" onblur="removeOnLink()">
+            </div>
+
+            <div class="radio_store">
+              <p class="label">Tem loja física?</p>
+      
+              <label class="radio">
+                <input type="radio" name="layout" class="yes" value="yes">
+                Sim
+                <span></span>
+              </label>
+      
+              <label class="radio">
+                <input type="radio" name="layout" class="not" value="not">
+                Não
+                <span></span>
+              </label>
+      
+            </div>
+
+            <button type="submit" class="button">Enviar <img src="../assets/arrow_right.svg" alt="Seta para direita"></button>
+
+          </form>
         </div>
 
-        <div class="input_area">
-          <label class="input_label label_email" for="email">E-mail</label>
-          <input class="input" type="text" name="email" id="email" onfocus="addOnEmail()" onblur="removeOnEmail()">
+        <div class="email">
+          <h3 class="subtitle">Ou mande-nos um oi</h3>
+
+          <a class="link" href="#">sejarevendedor@home&grill.com.br</a>
+          <a class="link" href="#">(99) 99999-9999</a>
         </div>
-
-        <div class="input_area">
-          <label class="input_label label_telefone" for="telefone">Telefone</label>
-          <input class="input" type="text" name="telefone" id="telefone" onfocus="addOnTelefone()" onblur="removeOnTelefone()">
-        </div>
-
-        <div class="input_area">
-          <label class="input_label label_mensagem" for="mensagem">Mensagem</label>
-          <textarea class="input" name="mensagem" id="mensagem" rows="1" onfocus="addOnMensagem()" onblur="removeOnMensagem()"></textarea>
-        </div>
-
-        <button type="submit" class="button">Enviar <img src="../assets/arrow_right.svg" alt="Seta para direita"></button>
-
-      </form>
-
-      <div class="email">
-        <h3 class="subtitle">Ou envie-nos um e-mail</h3>
-
-        <a class="link" href="#">contato@home&grill.com.br</a>
       </div>
     </div>
   </div>
