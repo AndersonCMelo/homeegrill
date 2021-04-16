@@ -33,7 +33,11 @@
   margin-bottom: 100px;
 }
 
-.second_section .content .unidade .imagem {
+.second_section .content .unidade {
+  flex: 1;
+}
+
+.second_section .content .unidade img {
   width: 100%;
 }
 

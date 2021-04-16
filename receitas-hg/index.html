@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home&Grill - Receitas Home&Grill</title>
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../assets/favicon2.png">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/floatButton.css">
+  <link rel="stylesheet" href="../css/contactSection.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles_responsive.css">
+
+</head>
+<body>
+  <!-- Header Desktop -->
+  <header class="header">
+    <div class="desktop_header header_container">
+      <div class="menu_container">
+        <a href="/"><img class="logo" src="../assets/logo.png" alt="Home&Grill"></a>
+
+        <nav class="navigation">
+          <ul class="normal_menu">
+            <li class="menu"><a href="../">Home</a></li>
+
+            <li class="menu"><a href="../sobre-nos/">Sobre</a></li>
+
+            <li class="menu dropdown">
+              <span class="menu_item" onclick="openProducts()">Produtos <span class="seta_baixo seta_baixo_produtos"></span></span>
+
+              <div class="menu_dropdown menu_produtos hide">
+                <a href="../produtos/home-&-grill-maxx/">Home & Grill Maxx</a>
+                <a href="../produtos/linha-drop-in/">Linha Drop in</a>
+                <a href="../produtos/linha-premium/">Linha Premium</a>
+                <a href="../produtos/linha-smart/">Linha Smart</a>
+                <a href="../produtos/linha-professional/">Linha Professional</a>
+                <a href="../produtos/linha-exclusive/">Linha Exclusive</a>
+                <a href="../produtos/home&grill-kamado/">Home&Grill Kamado</a>
+                <a href="../produtos/acessorios/">Acessórios</a>
+              </div>
+            </li>
+
+            <li class="menu"><a class="active" href="./">Receitas H&G</a></li>
+
+            <li class="menu"><a href="../nossas-unidades/">Unidades</a></li>
+
+            <li class="menu dropdown">
+              <span class="menu_item" onclick="openContacts()">Contato <span class="seta_baixo seta_baixo_contato"></span></span>
+
+              <div class="menu_dropdown menu_contato hide">
+                <a href="../fale-conosco/">Fale conosco</a>
+                <a href="../seja-revendedor/">Seja um revendedor</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <button class="button btn_store_menu">Acessar loja</button>
+    </div>
+  </header>
+
+  <!-- Header Mobile -->
+  <header>
+    <!-- Header -->
+    <div class="mobile_header">
+      <!-- Logo -->
+      <a href="../"><img class="logo" src="../assets/logo.png" alt="Home&Grill"></a>
+
+      <!-- Botão Hamburguer -->
+      <div class="hamburger hamburger_js" onclick="openMenu()">
+        <div class="hamburger_element"></div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="mobile">
+
+      <nav class="mobile_navigation">
+        <ul class="mobile_menu">
+          <li class="mobile_menu_item"><a href="../">Home</a></li>
+          <li class="mobile_menu_item"><a href="../sobre-nos/">Sobre</a></li>
+          <li class="mobile_menu_item dropdown">
+            <span onclick="openProductsMobile()">Produtos</span>
+
+            <div class="dropdown_mobile menu_produtos_mobile hide">
+              <a class="a_dropdown" href="../produtos/home-&-grill-maxx/">Home & Grill Maxx</a>
+              <a class="a_dropdown" href="../produtos/linha-drop-in/">Linha Drop in</a>
+              <a class="a_dropdown" href="../produtos/linha-premium/">Linha Premium</a>
+              <a class="a_dropdown" href="../produtos/linha-smart/">Linha Smart</a>
+              <a class="a_dropdown" href="../produtos/linha-professional/">Linha Professional</a>
+              <a class="a_dropdown" href="../produtos/linha-exclusive/">Linha Exclusive</a>
+              <a class="a_dropdown" href="../produtos/home&grill-kamado/">Home&Grill Kamado</a>
+              <a class="a_dropdown" href="../produtos/acessorios/">Acessórios</a>
+            </div>
+          </li>
+          <li class="mobile_menu_item"><a class="active" href="./">Receitas H&G</a></li>
+          <li class="mobile_menu_item"><a href="../nossas-unidades/">Unidades</a></li>
+          <li class="mobile_menu_item dropdown">
+            <span onclick="openContactsMobile()">Contato</span>
+
+            <div class="dropdown_mobile menu_contato_mobile hide">
+              <a class="a_dropdown" href="../fale-conosco/">Fale conosco</a>
+              <a class="a_dropdown" href="../seja-revendedor/">Seja um revendedor</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      
+    </div>
+  </header>
+
+  <!-- Float Button - Acesse nossa loja -->
+  <div class="btn_store">
+    <a class="btnTop" href="#">
+      <img class="text" src="../assets/acesse_nossa_loja.svg" alt="">
+      <img class="icon" src="../assets/btn_store.svg" alt="">
+    </a>
+  </div>
+  
+
+  <script src="../js/menuDropdown.js"></script>
+  <script src="../js/mobileHeader.js"></script>
+</body>
