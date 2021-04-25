@@ -1,0 +1,117 @@
+/* PRIMEIRA SESSÃO - HERO */
+.first_section .content {
+  padding: 180px 0 120px;
+}
+
+.first_section .content .title {
+  font-size: 78px;
+  font-weight: 800;
+  color: #FFFFFF;
+
+  width: 80%;
+}
+
+.first_section .content .text_block {
+  width: 40%;
+  margin-top: 40px;
+  padding-left: 20px;
+  border-left: 3px solid #E0833E;
+}
+
+.first_section .content .text_block .text {
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #FFFFFF;
+}
+
+/* SEGUNDA SESSÃO - RECEITAS */
+.second_section .content {
+  margin-bottom: 80px;
+}
+
+.second_section .content .categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.second_section .content .categories .category_link {
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFFFFF;
+
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.second_section .content .categories .category_link.active {
+  color: #E0833E;
+}
+
+.second_section .content .categories .category_link:last-child {
+  margin-right: 0;
+}
+
+.second_section .content .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.second_section .content .cards .card {
+  margin-bottom: 60px;
+}
+
+.second_section .content .cards .card img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.second_section .content .cards .card .header_infos .category {
+  padding: 4px 10px;
+  background: #810505;
+  border-radius: 3px;
+  color: #FFFFFF;
+
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.second_section .content .cards .card .header_infos .date {
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.second_section .content .cards .card .title {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #E0833E;
+}
+
+.second_section .content .cards .card .button {
+  background: #E0833E;
+  border: 2px solid #E0833E;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+
+  transition: 300ms ease;
+}
+
+.second_section .content .cards .card .button:hover {
+  background: #800404;
+  border: 2px solid #800404;
+  transform: scale(0.97);
+}

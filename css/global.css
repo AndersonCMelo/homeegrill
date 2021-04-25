@@ -11,7 +11,7 @@ body {
   min-width: 290px;
 }
 
-a, h1, h2, h3, h4, h5, h6, p, span, button, label, input {
+a, h1, h2, h3, h4, h5, h6, p, span, button, label, input, li {
   font-family: 'Raleway', sans-serif;
 }
 
