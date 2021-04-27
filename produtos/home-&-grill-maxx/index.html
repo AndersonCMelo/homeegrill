@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home&Grill - Home & Grill Maxx</title>
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../assets/favicon2.png">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../css/global.css">
+  <link rel="stylesheet" href="../../css/header.css">
+  <link rel="stylesheet" href="../../css/floatButton.css">
+  <link rel="stylesheet" href="../../css/contactSection.css">
+  <link rel="stylesheet" href="../../css/footer.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles_responsive.css">
+
+</head>
+<body>
+  <!-- Header Desktop -->
+  <header class="header">
+    <div class="desktop_header header_container">
+      <div class="menu_container">
+        <a href="../../"><img class="logo" src="../../assets/logo.png" alt="Home&Grill"></a>
+
+        <nav class="navigation">
+          <ul class="normal_menu">
+            <li class="menu"><a href="../../">Home</a></li>
+
+            <li class="menu"><a href="../../sobre-nos/">Sobre</a></li>
+
+            <li class="menu dropdown">
+              <span class="menu_item active" onclick="openProducts()">Produtos <span class="seta_baixo seta_baixo_produtos"></span></span>
+
+              <div class="menu_dropdown menu_produtos hide">
+                <a class="active" href="./">Home & Grill Maxx</a>
+                <a href="../../produtos/linha-drop-in/">Linha Drop in</a>
+                <a href="../../produtos/linha-premium/">Linha Premium</a>
+                <a href="../../produtos/linha-smart/">Linha Smart</a>
+                <a href="../../produtos/linha-professional/">Linha Professional</a>
+                <a href="../../produtos/linha-exclusive/">Linha Exclusive</a>
+                <a href="../../produtos/home&grill-kamado/">Home&Grill Kamado</a>
+                <a href="../../produtos/acessorios/">Acessórios</a>
+              </div>
+            </li>
+
+            <li class="menu"><a href="../../receitas-hg/">Receitas H&G</a></li>
+
+            <li class="menu"><a href="../../nossas-unidades/">Unidades</a></li>
+
+            <li class="menu dropdown">
+              <span class="menu_item" onclick="openContacts()">Contato <span class="seta_baixo seta_baixo_contato"></span></span>
+
+              <div class="menu_dropdown menu_contato hide">
+                <a href="../../fale-conosco/">Fale conosco</a>
+                <a href="../../seja-revendedor/">Seja um revendedor</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <button class="button btn_store_menu">Acessar loja</button>
+    </div>
+  </header>
+
+  <!-- Header Mobile -->
+  <header>
+    <!-- Header -->
+    <div class="mobile_header">
+      <!-- Logo -->
+      <a href="../../"><img class="logo" src="../../assets/logo.png" alt="Home&Grill"></a>
+
+      <!-- Botão Hamburguer -->
+      <div class="hamburger hamburger_js" onclick="openMenu()">
+        <div class="hamburger_element"></div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="mobile">
+
+      <nav class="mobile_navigation">
+        <ul class="mobile_menu">
+          <li class="mobile_menu_item"><a href="../../">Home</a></li>
+          <li class="mobile_menu_item"><a href="../../sobre-nos/">Sobre</a></li>
+          <li class="mobile_menu_item dropdown">
+            <span class="active" onclick="openProductsMobile()">Produtos</span>
+
+            <div class="dropdown_mobile menu_produtos_mobile hide">
+              <a class="a_dropdown active" href="./">Home & Grill Maxx</a>
+              <a class="a_dropdown" href="../../produtos/linha-drop-in/">Linha Drop in</a>
+              <a class="a_dropdown" href="../../produtos/linha-premium/">Linha Premium</a>
+              <a class="a_dropdown" href="../../produtos/linha-smart/">Linha Smart</a>
+              <a class="a_dropdown" href="../../produtos/linha-professional/">Linha Professional</a>
+              <a class="a_dropdown" href="../../produtos/linha-exclusive/">Linha Exclusive</a>
+              <a class="a_dropdown" href="../../produtos/home&grill-kamado/">Home&Grill Kamado</a>
+              <a class="a_dropdown" href="../../produtos/acessorios/">Acessórios</a>
+            </div>
+          </li>
+          <li class="mobile_menu_item"><a href="../../receitas-hg/">Receitas H&G</a></li>
+          <li class="mobile_menu_item"><a href="../../nossas-unidades/">Unidades</a></li>
+          <li class="mobile_menu_item dropdown">
+            <span onclick="openContactsMobile()">Contato</span>
+
+            <div class="dropdown_mobile menu_contato_mobile hide">
+              <a class="a_dropdown" href="../../fale-conosco/">Fale conosco</a>
+              <a class="a_dropdown" href="../../seja-revendedor/">Seja um revendedor</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      
+    </div>
+  </header>
+
+  <!-- Float Button - Acesse nossa loja -->
+  <div class="btn_store">
+    <a class="btnTop" href="#">
+      <img class="text" src="../../assets/acesse_nossa_loja.svg" alt="">
+      <img class="icon" src="../../assets/btn_store.svg" alt="">
+    </a>
+  </div>
+
+  <!-- Primeira sessão -->
+  <div class="first_section">
+    <div class="content container">
+      <h1 class="title">Home & Grill Maxx</h1>
+
+      <div class="text_block">
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Pellentesque tempor turpis et lacus placerat, non cursus metus commodo. 
+          Vestibulum posuere enim nec erat maximus lacinia.</p>
+      </div>
+
+      <img src="./assets/homeegrillmaxx_1.jpg" alt="" class="image">
+
+      <a class="button" href="#">Ver na loja</a>
+    </div>
+  </div>
+
+  <!-- Segunda sessão - Informações e galeria -->
+  <div class="second_section">
+    <div class="content container">
+      <h2 class="title">Ideal para apartamentos, área gourmet, barcos, camping...</h2>
+
+      <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor turpis et lacus placerat, non cursus metus commodo. Vestibulum posuere enim nec erat maximus lacinia.</p>
+
+      <div class="infos_section">
+        <div class="image_block">
+          <div class="slider">
+            <img class="slider_image selected" src="./assets/product1.jpg" alt="Imagem 1">
+            <img class="slider_image" src="./assets/product2.jpg" alt="Imagem 2">
+            <img class="slider_image" src="./assets/product3.jpg" alt="Imagem 3">
+            <img class="slider_image" src="./assets/product4.jpg" alt="Imagem 4">
+          </div>
+
+          <div class="navigation">
+            <img class="arrow arrow_left" src="./assets/arrow-left.svg" alt="Seta para esquerda" onclick="previousImage()" style="opacity: 0.5; cursor: not-allowed;">
+            <img class="arrow arrow_right" src="./assets/arrow-right.svg" alt="Seta para direita" onclick="nextImage()" style="opacity: 1; cursor: pointer;">
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="infos">
+          <div class="info">
+            <span class="info_label">Churrasqueira a gás</span>
+            <span class="info_title">HOME & GRILL MAXX</span>
+          </div>
+          
+          <div class="info">
+            <span class="info_label">Modelo</span>
+            <span class="info_title">HG-BLP</span>
+          </div>
+
+          <div class="info">
+            <span class="info_label">Garantia</span>
+            <span class="info_title">01 (um) ano</span>
+          </div>
+
+          <div class="info">
+            <span class="info_label">Prazo para envio</span>
+            <span class="info_title">ENVIO IMEDIATO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terceira sessão - Características -->
+  <div class="third_section">
+    <div class="content container">
+      <h2 class="title">Características</h2>
+      <span class="subtitle">Home & Grill Maxx</span>
+
+      <div class="cards">
+        <div class="card">
+          <img class="icon" src="./assets/icone_inox.svg" alt="">
+
+          <span class="feature">Fabricado em aço inox 304</span>
+
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="card">
+          <img class="icon" src="./assets/icone_fogo.svg" alt="">
+
+          <span class="feature">Acendimento eletrônico</span>
+
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="card">
+          <img class="icon" src="./assets/icone_fumaca.svg" alt="">
+
+          <span class="feature">Baixa emissão de fumaça</span>
+
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="card">
+          <img class="icon" src="./assets/icone_temperatura.svg" alt="">
+
+          <span class="feature">Regulador de temperatura</span>
+
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+
+      <ul class="list">
+        <li class="list_item">Queimador infravermelho</li>
+        <li class="list_item">Bandeja coletora de gordura</li>
+        <li class="list_item">Acompanha pedra de cerâmica</li>
+        <li class="list_item">Churrasqueira portátil</li>
+        <li class="list_item">Utiliza gás glp</li>
+        <li class="list_item">Fácil limpeza e manutenção</li>
+        <li class="list_item">Grelha em aço inoxidável 304 (16 x 27cm)</li>
+        <li class="list_item">Poder ser convertida para gás natural</li>
+        <li class="list_item">Peso líquido: 8kg</li>
+      </ul>
+
+      <a class="button" href="#">Ir para a loja</a>
+    </div>
+  </div>
+
+  <!-- Quarta sessão - Revendedor -->
+  <div class="fourth_section">
+    <div class="content container">
+      <h2 class="title">Leve sua Home & Grill e transforme o seu churrasco</h2>
+
+      <p class="text">Encontre o revendedor mais próximo a você e compre já a sua Home & Grill</p>
+
+      <a class="button" href="#">Encontrar revendedor <img src="../../assets/arrow_right.svg" alt="Seta para direita"></a>
+    </div>
+  </div>
+
+  <!-- Quinta sessão - Vídeo -->
+  <div class="fifth_section">
+    <div class="content container">
+      <h2 class="title">Veja o que você pode fazer com uma Home & Grill</h2>
+
+      <img class="video_image" src="../../assets/video_image.jpg" alt="">
+
+      <p class="text">Mais receitas como essa você encontra na nossa página de Receitas H&G.</p>
+
+      <a class="button" href="../../receitas-hg/">Veja mais receitas <img src="../../assets/arrow_right.svg" alt="Seta para direita"></a>
+    </div>
+  </div>
+
+  <!-- Sessão de Contato/Unidades -->
+  <div class="contact_section">
+    <div class="content container">
+      <h2 class="title">Onde nos encontrar</h2>
+
+      <div class="infos">
+
+        <div class="address">
+          <h3 class="address_title">Showroom Natal</h3>
+          <p class="address_text">Av. Hermes da Fonseca, 1313, Tirol - Natal/RN</p>
+          <p class="address_text">(84) 98805-4457</p>
+        </div>
+
+        <div class="address">
+          <h3 class="address_title">Showroom João Pessoa</h3>
+          <p class="address_text">Av. Esperança - 1260 - Manaíra - João Pessoa/PB</p>
+          <p class="address_text">(83) 3031-3040</p>
+        </div>
+
+        <div class="address">
+          <h3 class="address_title">Showroom Alphaville</h3>
+          <p class="address_text">Calçada das Papoulas - 100 - Alphaville - Comercial Barueri/SP</p>
+          <p class="address_text">(11) 4193-3677</p>
+        </div>
+
+        <div class="social_media">
+          <h3 class="sm_title">Redes sociais</h3>
+
+          <a class="sm_item" href="#"><img class="sm_icon" src="../../assets/facebook.svg" alt="Ícone do Facebook"> Facebook</a>
+          <a class="sm_item" href="#"><img class="sm_icon" src="../../assets/instagram.svg" alt="Ícone do Instagram">Instagram</a>
+          <a class="sm_item" href="#"><img class="sm_icon" src="../../assets/youtube.svg" alt="Ícone do YouTube">YouTube</a>
+          <a class="sm_item" href="#"><img class="sm_icon" src="../../assets/twitter.svg" alt="Ícone do Twitter">Twitter</a>
+
+          <div class="sm_icons_mobile">
+            <a class="sm_item_mobile" href="#"><img class="sm_icon" src="../../assets/facebook.svg" alt="Ícone do Facebook"></a>
+            <a class="sm_item_mobile" href="#"><img class="sm_icon" src="../../assets/instagram.svg" alt="Ícone do Instagram"></a>
+            <a class="sm_item_mobile" href="#"><img class="sm_icon" src="../../assets/youtube.svg" alt="Ícone do YouTube"></a>
+            <a class="sm_item_mobile" href="#"><img class="sm_icon" src="../../assets/twitter.svg" alt="Ícone do Twitter"></a>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="button" href="../../fale-conosco/">Fale conosco <img src="../../assets/arrow_right.svg" alt="Seta para direita"></a>
+      <a class="button_mobile" href="../../fale-conosco/">Fale conosco <img src="../../assets/arrow_right_white.svg" alt="Seta para direita"></a>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <div class="footer">
+    <div class="content container">
+      <a href="../../"><img class="logo" src="../../assets/logo2x.png" alt="Home&Grill"></a>
+      <span class="copyright">Copyright © 2021 Home&Grill. Todos os direitos reservados.</span>
+    </div>
+  </div>
+  
+  <script src="../../js/menuDropdown.js"></script>
+  <script src="../../js/mobileHeader.js"></script>
+  <script src="./slider.js"></script>
+</body>
