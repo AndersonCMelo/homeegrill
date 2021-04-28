@@ -52,6 +52,7 @@
   }
 }
 
+/* ESCONDE NO DESKTOP */
 @media (min-width: 700px) {
   .second_section .content .mobile_categories {
     display: none;
