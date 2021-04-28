@@ -26,6 +26,7 @@
 
 .first_section .content .text_block .text {
   font-size: 16px;
+  line-height: 150%;
   color: #FFFFFF;
 }
 
@@ -55,7 +56,7 @@
 
 .second_section .content .text {
   margin: 40px 0 20px;
-  max-width: 540px;
+  max-width: 560px;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
