@@ -1,0 +1,317 @@
+/* PRIMEIRA SESSÃO - HERO */
+.first_section .content {
+  padding: 180px 0 90px;
+}
+
+.first_section .content .title {
+  font-size: 78px;
+  font-weight: 800;
+  color: #FFFFFF;
+
+  width: 100%;
+}
+
+.first_section .content .text_block {
+  width: 50%;
+  margin-top: 40px;
+  padding-left: 20px;
+  border-left: 3px solid #E0833E;
+}
+
+.first_section .content .text_block .text {
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #FFFFFF;
+}
+
+.first_section .content .image {
+  width: 100%;
+  max-height: 400px;
+  margin: 40px 0;
+
+  object-fit: cover;
+}
+
+.first_section .content .button {
+  background: #E0833E;
+  border: 2px solid #E0833E;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+
+  transition: 300ms ease;
+}
+
+.first_section .content .button:hover {
+  background: #800404;
+  border: 2px solid #800404;
+  transform: scale(0.97);
+}
+
+/* SEGUNDA SESSÃO - CARACTERÍSTICAS */
+.second_section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.second_section .content .title {
+  font-size: 60px;
+  font-weight: 800;
+  color: #FFFFFF;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.second_section .content .text {
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 60px;
+}
+
+.second_section .content .infos_section {
+  display: flex;
+  justify-content: baseline;
+  width: 100%;
+}
+
+.second_section .content .infos_section .image_block .slider {
+  width: 656px;
+  height: 564px;
+
+  position: relative;
+}
+
+.second_section .content .infos_section .image_block .slider img {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  opacity: 0;
+}
+
+.second_section .content .infos_section .image_block .slider img.selected {
+  opacity: 1;
+}
+
+.second_section .content .infos_section .image_block .navigation {
+  margin-top: 20px;
+}
+
+.second_section .content .infos_section .image_block .navigation .arrow:first-child {
+  margin-right: 20px;
+}
+
+.second_section .content .infos_section .divider {
+  width: 110px;
+  border-top: 3px solid #E0833E;
+  margin: 70px 20px 0 -15px;
+
+  position: relative;
+}
+
+.second_section .content .infos_section .infos {
+  margin-top: 62px;
+}
+
+.second_section .content .infos_section .info {
+  margin-bottom: 20px;
+}
+
+.second_section .content .infos_section .info .info_label {
+  display: block;
+  font-size: 16px;
+  color: #676767;
+  margin-bottom: 3px;
+}
+
+.second_section .content .infos_section .info .info_title {
+  display: block;
+  font-size: 22px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+
+/* TERCEIRA SESSÃO - CARACTERÍSTICAS */
+.third_section {
+  background: #FFFFFF;
+}
+
+.third_section .content {
+  padding: 60px 0 50px;
+}
+
+.third_section .content .title {
+  font-size: 60px;
+  font-weight: 800;
+  color: #800404;
+}
+
+.third_section .content .subtitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.third_section .content .cards {
+  margin: 60px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.third_section .content .cards .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.third_section .content .cards .card .icon {
+  width: 90px;
+  height: 90px;
+}
+
+.third_section .content .cards .card .feature {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+  margin: 20px 0 4px;
+}
+
+.third_section .content .cards .card .text {
+  font-size: 16px;
+  color: #333333;
+}
+
+.third_section .content .list {
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.third_section .content .button {
+  background: #E0833E;
+  border: 2px solid #E0833E;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+
+  transition: 300ms ease;
+}
+
+.third_section .content .button:hover {
+  background: #800404;
+  border: 2px solid #800404;
+  transform: scale(0.97);
+}
+
+/* QUARTA SESSÃO - REVENDEDOR */
+.fourth_section {
+  background: #FFFFFF;
+}
+
+.fourth_section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 40px 0 70px;
+}
+
+.fourth_section .content .title {
+  font-size: 60px;
+  font-weight: 800;
+  color: #800404;
+  text-align: center;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.fourth_section .content .text {
+  font-size: 16px;
+  color: #333333;
+  text-align: center;
+  width: 35%;
+  margin-bottom: 60px;
+}
+
+.fourth_section .content .button {
+  font-size: 16px;
+  font-weight: 600;
+  color: #E0833E;
+}
+
+.fourth_section .content .button img {
+  margin-left: 10px;
+  transition: 300ms ease;
+}
+
+.fourth_section .content .button:hover img {
+  transform: translateX(10px);
+}
+
+/* QUINTA SESSÃO - VÍDEO */
+.fifth_section {
+  background-image: url("../../assets/background_video_sobre.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fifth_section .content {
+  padding: 50px 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fifth_section .content .title {
+  font-size: 60px;
+  font-weight: 800;
+  color: #FFFFFF;
+  text-align: center;
+  width: 70%;
+  margin-bottom: 50px;
+}
+
+.fifth_section .content .video_image {
+  width: 70%;
+}
+
+.fifth_section .content .text {
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  width: 35%;
+  margin: 30px 0 20px;
+}
+
+.fifth_section .content .button {
+  font-size: 16px;
+  font-weight: 600;
+  color: #E0833E;
+}
+
+.fifth_section .content .button img {
+  margin-left: 10px;
+  transition: 300ms ease;
+}
+
+.fifth_section .content .button:hover img {
+  transform: translateX(10px);
+}
