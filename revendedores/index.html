@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home&Grill - Sobre nós</title>
+  <title>Home&Grill - Revendedores</title>
   
   <!-- Favicon -->
   <link rel="shortcut icon" href="../assets/favicon2.png">
@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./styles_responsive.css">
-  
+
 </head>
 <body>
   <!-- Header Desktop -->
@@ -32,7 +32,7 @@
           <ul class="normal_menu">
             <li class="menu"><a href="../">Home</a></li>
 
-            <li class="menu"><a class="active" href="./">Sobre</a></li>
+            <li class="menu"><a href="../sobre-nos/">Sobre</a></li>
 
             <li class="menu dropdown">
               <span class="menu_item" onclick="openProducts()">Produtos <span class="seta_baixo seta_baixo_produtos"></span></span>
@@ -88,7 +88,7 @@
       <nav class="mobile_navigation">
         <ul class="mobile_menu">
           <li class="mobile_menu_item"><a href="../">Home</a></li>
-          <li class="mobile_menu_item"><a class="active" href="./">Sobre</a></li>
+          <li class="mobile_menu_item"><a href="../sobre-nos/">Sobre</a></li>
           <li class="mobile_menu_item dropdown">
             <span onclick="openProductsMobile()">Produtos</span>
 
@@ -125,88 +125,81 @@
       <img class="text" src="../assets/acesse_nossa_loja.svg" alt="">
       <img class="icon" src="../assets/btn_store.svg" alt="">
     </a>
-  </div> 
+  </div>
 
   <!-- Primeira sessão -->
   <div class="first_section">
     <div class="content container">
-      <h1 class="title">Sobre nós</h1>
+      <h1 class="title">Revendedores</h1>
 
       <div class="text_block">
-        <p class="text">Somos a única empresa brasileira que as churrasqueiras são 
-          feitas 100% em aço inoxidável. Há quase oito anos no mercado brasileiro, 
-          com uma linha variada de churrasqueiras a gás, a carvão, flex e acessórios 
-          para churrasco com mais eficiência no mercado.</p>
+        <p class="text">Confira aqui onde você pode encontrar uma unidade Home&Grill.</p>
       </div>
     </div>
   </div>
 
-  <!-- Segunda sessão - Foto -->
-  <div class="secont_section">
+  <!-- Segunda sessão - Filtro -->
+  <div class="second_section">
     <div class="content container">
-      <img class="img" src="../assets/imagem-sobre.jpg" alt="Loja da Home&Grill">
+      <div class="filter">
+
+        <div class="select_area">
+          <label for="cidade">Cidade</label>
+  
+          <select name="cidade" id="cidade">
+            <option value="Todos">Todos</option>
+            <option value="João Pessoa/PB">João Pessoa/PB</option>
+            <option value="Natal/RN">Natal/RN</option>
+            <option value="Barueri/SP">Barueri/SP</option>
+          </select>
+        </div>
+  
+        <button class="button">Buscar</button>
+
+      </div>
     </div>
   </div>
 
-  <!-- Terceira sessão - Texto -->
+  <!-- Segunda sessão - Unidades -->
   <div class="third_section">
     <div class="content container">
-      <div class="text_block">
-        <p class="text">Acreditamos que churrasquear só tem vantagens e nada mais 
-          justo do que unir com mais design, mais tecnologia e muito mais qualidade. 
-          Nossas churrasqueiras são pensadas para fazer com que o seu tempo entre 
-          familiares e amigos seja de qualidade e diversão.</p>
 
-        <!-- <p class="text">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas velit odio, lacinia sit amet placerat id, tincidunt at quam. Vestibulum non fermentum sem. Integer sagittis rutrum diam, a bibendum arcu auctor eu. Integer id tellus euismod, hendrerit ante non, fermentum mi.</p> -->
+      <div class="unidade">
+        <h3 class="address_title">Showroom Natal</h3>
+        <p class="address_text">Av. Hermes da Fonseca, 1313, Tirol - Natal/RN</p>
+        <p class="address_text">(84) 98805-4457</p>
       </div>
-    </div>
-  </div>
 
-  <!-- Quarta sessão - Diferenças -->
-  <div class="fourth_section">
-    <div class="content container">
-      <h3 class="title">Diferenciais</h3>
-
-      <div class="differences">
-
-        <div class="difference">
-          <span class="subtitle">Churrasqueira em inox</span>
-          <p class="text">Nossas churrasqueiras são feitas totalmente em inox 304 
-            garantindo a qualidade dos alimentos e sem dificuldade na hora de limpar 
-            e podem ser embutidas fazendo parte da decoração do seu lar ou portáteis, 
-            estando presente onde você for.</p>
-        </div>
-
-        <div class="difference">
-          <span class="subtitle">Emissão mínima de fumaça</span>
-          <p class="text">Eliminando o desconforto da fumaça proporcionada pela 
-            churrasqueira tradicional (à carvão), desenvolvemos equipamentos 
-            inovadores criados para o mínimo ou zero fumaça, dependendo da configuração 
-            e do modelo de churrasqueira e da grelha.</p>
-        </div>
-
-        <div class="difference">
-          <span class="subtitle">Controle de temperatura</span>
-          <p class="text">Com o termostato embutido não precisa se preocupar se seu 
-            churrasco irá queimar, além de garantir a temperatura correta para seu 
-            corte preferido também mantém seu churrasco quente por mais tempo.</p>
-        </div>
-
-        <div class="difference">
-          <span class="subtitle">Sistema Safe Stop</span>
-          <p class="text">As churrasqueiras Home&amp;Grill contém o sistema corta 
-            gás em todos os modelos garantindo a segurança da sua família para aproveitar 
-            cada momento em segurança.</p>
-        </div>
-
+      <div class="unidade">
+        <h3 class="address_title">Showroom João Pessoa</h3>
+        <p class="address_text">Av. Esperança - 1260 - Manaíra - João Pessoa/PB</p>
+        <p class="address_text">(83) 3031-3040</p>
       </div>
-    </div>
-  </div>
 
-  <!-- Quinta sessão - Vídeo -->
-  <div class="fifth_section">
-    <div class="content container">
-      <img class="video_image" src="../assets/video_image.jpg" alt="">
+      <div class="unidade">
+        <h3 class="address_title">Showroom Alphaville</h3>
+        <p class="address_text">Calçada das Papoulas - 100 - Alphaville - Comercial Barueri/SP</p>
+        <p class="address_text">(11) 4193-3677</p>
+      </div>
+
+      <div class="unidade">
+        <h3 class="address_title">Estabelecimento</h3>
+        <p class="address_text">Nome da rua, 0000, Bairro - Cidade/UF</p>
+        <p class="address_text">(99) 98888-8888</p>
+      </div>
+
+      <div class="unidade">
+        <h3 class="address_title">Estabelecimento</h3>
+        <p class="address_text">Nome da rua, 0000, Bairro - Cidade/UF</p>
+        <p class="address_text">(99) 98888-8888</p>
+      </div>
+
+      <div class="unidade">
+        <h3 class="address_title">Estabelecimento</h3>
+        <p class="address_text">Nome da rua, 0000, Bairro - Cidade/UF</p>
+        <p class="address_text">(99) 98888-8888</p>
+      </div>
+
     </div>
   </div>
 
@@ -269,4 +262,3 @@
   <script src="../js/menuDropdown.js"></script>
   <script src="../js/mobileHeader.js"></script>
 </body>
-</html>
